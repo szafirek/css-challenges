@@ -1,0 +1,97 @@
+.hamburger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+.hamburger span {
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    width: 28px;
+    height: 3px;
+    display: block;
+    background: #F21D41;
+    transition: background 0.3s;
+}
+.hamburger:hover span, .hamburger:hover span:before, .hamburger:hover span:after {
+  background: #B01718;
+}
+.hamburger span:before, .hamburger span:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: #F21D41;
+  left: 0px;
+  transition: all 0.3s;
+}
+.hamburger span:before {
+  top: -9px;
+}
+.hamburger span:after {
+  top: 9px;
+}
+.hamburger.close span {
+  visibility: hidden;
+} 
+.hamburger.close span:before {
+  transform:rotate(-45deg); 
+  -webkit-transform:rotate(-45deg); 
+  -moz-transform:rotate(-45deg); 
+  -o-transform:rotate(-45deg);
+  visibility: visible;
+  top: 0px;
+} 
+.hamburger.close span:after {
+  transform:rotate(45deg); 
+  -webkit-transform:rotate(45deg); 
+  -moz-transform:rotate(45deg); 
+  -o-transform:rotate(45deg);
+  visibility: visible;
+  top: 0px;
+}
+nav {
+  display: none;
+  padding-top: 100px;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  background-color: #3A3252;
+  color: #ffffff;
+  z-index: 1;
+  animation: animateright 0.4s;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+nav ul li:hover {
+  background: #F21D41;
+}
+nav a, nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+nav.open {
+  display: block;
+}
+@keyframes animateright {
+  from {
+    right:-300px;
+    opacity:0;
+  }
+  to {
+    right:0;
+    opacity:1;
+  }
+}

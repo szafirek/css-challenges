@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
+
+    <title>CSS Challenges | Example | Hamburger</title>
+
+    <link rel="stylesheet" href="../shared/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <style>
+      html {
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      html, body {
+        font-family: "Lato", sans-serif;
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        position: relative;
+        padding: 50px 10px;
+      }
+      .wrapper {
+        background-color: #BCE3C5;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        margin-top: -200px;
+        left: 50%;
+        margin-left: -200px;
+        overflow: hidden;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <a href="#"><li>home</li></a>
+          <a href="#"><li>portfolio</li></a>
+          <a href="#"><li>about</li></a>
+          <a href="#"><li>contact</li></a>
+        </ul>
+      </nav>
+
+      <div class="hamburger">
+        <span></span>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"> </script>
+  </body>
+</html>
