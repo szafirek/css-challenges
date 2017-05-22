@@ -1,0 +1,39 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  margin-top: -105px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+}
+.percentage-bar {
+  background-color: #f1f1f1;
+  margin: 20px 0;
+}
+.percentage-bar > div {
+  text-align: center;
+  color: #ffffff;
+}
+.percentage-bar, .percentage-bar > div {
+  border-radius: 16px;
+}
+.neon-green {
+  width: 23%;
+  background-color: #AAFF00;
+}
+.neon-orange {
+  width: 75%;
+  background-color: #FFAA00;
+}
+.neon-pink {
+  width: 37%;
+  background-color: #FF00AA;
+}
+.neon-violet {
+  width: 95%;
+  background-color: #AA00FF;
+}
+.neon-blue {
+  width: 59%;
+  background-color: #00AAFF;
+}
