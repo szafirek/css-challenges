@@ -1,0 +1,74 @@
+section > div {
+  width: 100%;
+}
+section h3 {
+  text-align: right;
+}
+section > div .chart {
+  width: 100%;
+  background: repeating-linear-gradient(to right, #dddddd, #dddddd 1px, #ffffff 1px, #ffffff 10%);
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #dddddd;
+  padding-top: 10px;
+  position: relative;
+}
+@keyframes chart-animation {
+    from { width: 0%; padding: 10px 0; }
+}
+section .chart > div {
+  margin-bottom: 10px;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  cursor: pointer;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: chart-animation;
+}
+section .chart .banana {
+  width: 29%;
+  background-color: #F9D423;
+}
+section .chart .pear {
+  width: 19%;
+  background-color: #EDE574;
+}
+section .chart .orange {
+  width: 49%;
+  background-color: #FC913A;
+}
+section .chart .apple {
+  width: 73%;
+  background-color: #FF4E50;
+}
+section .chart .strawberry {
+  width: 27%;
+  background-color: #E33738;
+}
+section .chart .kiwi {
+  width: 19%;
+  background-color: #B3CC57;
+}
+section .chart > div:hover {
+  opacity: 0.7;
+}
+section .chart i {
+  position: absolute;
+  border: solid #000000;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+section .chart .arrow-top {
+  top: 0;
+  left: -4px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+section .chart .arrow-right {
+  bottom: -4px;
+  right: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
